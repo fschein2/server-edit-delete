@@ -7,18 +7,36 @@ body {
 }
 
 #title {
-    padding-left: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 #soda-div section {
     padding: 10px;
-    margin: 10px;
     background: #083F72;
     border-radius: 5px;
 }
 
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+.columns section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 200px;
+}
+
 #soda-info {
     padding: 10px;
+    padding-left: 15px;
     margin: 10px;
     background: #083F72;
     border-radius: 5px;
@@ -51,12 +69,6 @@ body {
     margin: 10px;
     background: #083F72;
     border-radius: 5px;
-}
-
-/* Are You Sure */
-
-#are-you-sure {
-    z-index: 1;
 }
 
 /* Form */
@@ -119,30 +131,9 @@ a {
 }
 
 .transparent {
-    opacity: 0;
+    display: none;
 }
 
 #result {
     text-align: center;
-}
-
-
-/* Larger Resolutions */
-
-@media (min-width: 600px) {
-    .columns {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .two-columns div {
-        flex: 1;
-    }
-    #soda-div section {
-        width: 25%;
-        text-align: center;
-    }
-    #add-soda {
-        max-width: 30%;
-        margin: auto;
-    }
 }

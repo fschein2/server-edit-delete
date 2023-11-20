@@ -134,7 +134,7 @@ const addEditSoda = async(e) => {
 
     if (form._id.value == -1) {
         formData.delete("_id");
-
+        console.log(...formData);
         response = await fetch("/api/sodas", {
             method: "POST",
             body: formData
@@ -179,7 +179,7 @@ const addEditSoda = async(e) => {
 
     soda = await response.json();
 
-    if (form._id.value != 1) {
+    if (form._id.value != -1) {
         displayInfo(soda);
     }
 
